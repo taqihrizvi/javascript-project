@@ -20,7 +20,13 @@ jobs:
 
     - name: Install dependencies
       run: npm install
+      
+    - name: Install auto-changelog globally
+      run: npm install -g auto-changelog
 
+    - name: Set execute permission for auto-changelog
+      run: chmod +x $(which auto-changelog)
+      
     - name: Generate changelog
       run: npm run changelog
 
