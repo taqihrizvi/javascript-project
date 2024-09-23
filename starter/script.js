@@ -50,4 +50,5 @@ BMIJohn = johnweight / johnheight ** 2
 console.log (BMIJohn)
 console.log (BMIMark)
 console.log(BMIMark>BMIJohn)
-
+console.log("This is a release")
+console.log("This is a release by farwa")
