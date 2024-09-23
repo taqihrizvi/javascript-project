@@ -20,9 +20,6 @@ jobs:
 
     - name: Install dependencies
       run: npm install
-      
-    - name: Install auto-changelog globally
-      run: npm install -g auto-changelog
 
     - name: Install auto-changelog globally
       run: npm install -g auto-changelog
@@ -39,12 +36,12 @@ jobs:
       run: |
         git add CHANGELOG.md
         git commit -m "Update changelog" || echo "No changes to commit"
-        git push
-        
+        git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/taqihrizvi/javascript-project.git
+
     - name: Create GitHub Release
       uses: actions/create-release@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # GitHub automatically provides this token
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         tag_name: "v${{ github.sha }}"  # Use commit SHA for versioning or customize as needed
         release_name: "Release ${{ github.sha }}"
