@@ -1,0 +1,6 @@
+{
+    "scripts": {
+      "changelog": "auto-changelog --template keepachangelog --output CHANGELOG.md"
+    }
+  }
+  
