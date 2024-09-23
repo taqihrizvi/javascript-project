@@ -39,7 +39,7 @@ let johnweight = 92
 let johnheight = 1.95
 // BMI = mass / height ** 2 = mass / (height * height)
 BMIMark = markweight / markheight ** 2
-BMIJohn = johnweight / johnheight ** 2
+BMIJohn = johnweight / johnheight ** 2 */
 
 markheight = 1.88
 markweight = 95
@@ -51,4 +51,3 @@ console.log (BMIJohn)
 console.log (BMIMark)
 console.log(BMIMark>BMIJohn)
 
-*/
