@@ -1,6 +1,8 @@
 {
     "scripts": {
-      "changelog": "auto-changelog --template keepachangelog --output CHANGELOG.md"
+        "changelog": "auto-changelog --template keepachangelog --output CHANGELOG.md"
+    },
+    "devDependencies": {
+        "auto-changelog": "^2.5.0"
     }
-  }
-  
+}
